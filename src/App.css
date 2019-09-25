@@ -2,21 +2,74 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.card {
+  height: 280px;
+  width: 300px;
+  margin: 30px auto;
+  background-color: aliceblue;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.322);
+}
+.date, .title {
+  font-size: 45px;
+  font-weight: 600;
+  margin: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.date {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.date .dates {
+  margin: 0 10px;
+  font-size: 3rem;
+}
+
+.date span {
+  font-size: 18px;
+  text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
 }
 
-.App-link {
-  color: #09d3ac;
+.date span p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.title {
+  border-bottom: 0.8px solid grey;
+  padding: 20px;
+}
+
+.time {
+  margin: 10px;
+}
+
+.footer {
+  display: block;
+  font-size: 12px;
+  margin: 60px;
+  color: teal;
+  margin-bottom: 0;
+}
+
+.btn {
+  margin: 0 10px !important;
+}
+
+.rotate-180 {
+  transform: rotate(180deg)
+}
+
+.todayButton {
+  transform: rotate(90deg);
+}
+
+.btn:nth-child(2):hover .todayButton {
+  transform: rotate(-90deg);
+  transition: 1s
 }
